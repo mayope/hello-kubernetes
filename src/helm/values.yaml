@@ -5,12 +5,12 @@
 replicaCount: 1
 
 image:
-  repository: registry.mayope.net/hello
+  repository: registry-0fc25963-933a-42b0-93e3-5036329931cb.dyn.mayope.net/hello
   pullPolicy: Always
   version: latest
 
 service:
-  type: ClusterIp
+  type: ClusterIP
   port: 80
   healthCheckPath: /
 
