@@ -10,7 +10,7 @@ image:
   version: latest
 
 service:
-  type: NodePort
+  type: ClusterIp
   port: 80
   healthCheckPath: /
 
