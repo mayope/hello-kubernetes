@@ -1,0 +1,23 @@
+# Default values for service.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: registry.mayope.net/hello
+  pullPolicy: Always
+  version: latest
+
+service:
+  type: NodePort
+  port: 80
+  healthCheckPath: /
+
+
+ingress:
+  enabled: true
+
+serviceAccount:
+  # Specifies whether a service account should be created
+  create: true
