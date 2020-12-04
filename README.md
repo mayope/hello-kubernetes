@@ -1,3 +1,3 @@
-# Hello World For Kubernetes
+# "Hello World" For Kubernetes
 
-Hello world app for Kubernetes
+This is a "Hello World" app for Kubernetes.
