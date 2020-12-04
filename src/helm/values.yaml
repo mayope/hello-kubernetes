@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: registry-0fc25963-933a-42b0-93e3-5036329931cb.dyn.mayope.net/hello
+  repository: registry-797ecf26-f6b5-4fad-9e7a-d87a2b96853e.dyn.mayope.net/hello
   pullPolicy: Always
   version: latest
 

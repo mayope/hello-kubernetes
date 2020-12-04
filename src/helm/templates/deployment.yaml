@@ -20,7 +20,7 @@ spec:
     spec:
       serviceAccountName: {{ include "service.serviceAccountName" . }}
       imagePullSecrets:
-        - name: registry-auth
+        - name: docker-registry-auth
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:
