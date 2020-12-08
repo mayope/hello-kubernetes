@@ -5,13 +5,13 @@ repositories {
 
 tasks {
 
+    val registry = "registry-a81af7e6-72e9-4063-8899-4e90aba8d9b6.dyn.mayope.net/hello"
+
     register<Exec>("deploy") {
         dependsOn("pushDocker")
         workingDir("src/helm")
-        commandLine("helm", "upgrade", "--install", "hello", ".")
+        commandLine("helm", "upgrade", "--install", "hello", ".", "--set", "image.repository=$registry")
     }
-
-    val registry = "registry-797ecf26-f6b5-4fad-9e7a-d87a2b96853e.dyn.mayope.net/hello:latest"
 
     register<Exec>("pushDocker"){
         dependsOn("buildDocker")
